@@ -37,20 +37,22 @@ Here's an illustration of Singularity containers for multiple students, each wit
         | |                          |     |
         | | Singularity Container    |     |
         | | for eyy002               |     |
+        | | eg: {                    |     |
         | | - OS: CentOS             |     |
         | | - Languages: R           |     |
         | | - GCC, Make              |     |
-        | | - Data Analysis Tools    |     |
+        | | - Data Analysis Tools }  |     |
         | +--------------------------+     |
         |                                  |
         | +--------------------------+     |
         | |                          |     |
         | | Singularity Container    |     |
         | | for eyy003               |     |
+        | | eg: {                    |     |
         | | - OS: Fedora             |     |
         | | - Languages: Java        |     |
         | | - Apache Spark           |     |
-        | | - Hadoop                 |     |
+        | | - Hadoop              }  |     |
         | +--------------------------+     |
         |                                  |
         +----------------------------------+
