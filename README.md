@@ -1,11 +1,10 @@
 # How Singularity Container works on Kepler server?
 
 Here's an illustration of Singularity containers for multiple students, each with their preferred OS, software, and packages, on Kepler:\
-'''
     +----------------------------------+
     |               Kepler             |
     |    High Performance GPU Server   |
-    |          OS:Ubuntu Server        |
+    |          OS: Ubuntu Server       |
     +----------------------------------+
                |                   |
                |                   |
@@ -18,44 +17,6 @@ Here's an illustration of Singularity containers for multiple students, each wit
                |                   |
                |                   |
                |                   |
-               V                   V
-    +----------------------------------+
-    |       Singularity Runtime        |
-    |                                  |
-    | +--------------------------+     |
-    | |                          |     |
-    | | Singularity Container    |     |
-    | | for eyy001               |     |
-    | | - prefferd OS (Ubunutu)  |     |
-    | | - prefferd languages(..) |     |
-    | | - prefferd packages(..)  |     |
-    | | - preffered software     |     |
-    | +--------------------------+     |
-    |                                  |
-    | +--------------------------+     |
-    | |                          |     |
-    | | Singularity Container    |     |
-    | | for eyy002               |     |
-    | | eg: {                    |     |
-    | | - OS: CentOS             |     |
-    | | - languages:R            |     |
-    | | - GCC, Make              |     |
-    | | - Data Analysis Tools  } |     |
-    | +--------------------------+     |
-    |                                  |
-    | +--------------------------+     |
-    | |                          |     |
-    | | Singularity Container    |     |
-    | | for eyy003               |     |
-    | | eg: {                    |     |
-    | | - OS: Fedora             |     |
-    | | - languages: Java        |     |
-    | | - Apache Spark           |     |
-    | | - Hadoop                 |     |
-    | +--------------------------+     |
-    |                                  |
-    +----------------------------------+    '''
-
 
 
 
