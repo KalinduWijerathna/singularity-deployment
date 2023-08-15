@@ -55,8 +55,8 @@ Here's an illustration of Singularity containers for multiple students, each wit
                                                ```
 
 ```
-- Each Student can build <b>only 1<b> singularity container in their user account in Kepler.
-- Each Student can install their <b>preferred OS(Ubuntu,CentOS...etc.), preferrd laguages(C++,Java,R,Python...etc.), prefered libraries, packages, and softwares<b> inside their container.
+- Each Student can build <b>only 1</b> singularity container in their user account in Kepler.
+- Each Student can install their <b>preferred OS(Ubuntu,CentOS...etc.), preferrd laguages(C++,Java,R,Python...etc.), prefered libraries, packages, and softwares</b> inside their container.
 
 
 # Singularity Quick-Start for New User
