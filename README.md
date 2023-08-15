@@ -17,7 +17,7 @@ Here's an illustration of Singularity containers for multiple students, each wit
 +--------------|-------------------|--------------+
                |                   |
                |                   |
-               |                   |
+               V                   V
         +----------------------------------+
         |       Singularity Runtime        |
         |                                  |
@@ -54,13 +54,9 @@ Here's an illustration of Singularity containers for multiple students, each wit
         +----------------------------------+
                                                ```
 
-
-
-
-# Why Use Singularity?
-    - 
-
-
+```
+- Each Student can build <b>only 1<b> singularity container in their user account in Kepler.
+- Each Student can install their <b>preferred OS(Ubuntu,CentOS...etc.), preferrd laguages(C++,Java,R,Python...etc.), prefered libraries, packages, and softwares<b> inside their container.
 
 
 # Singularity Quick-Start for New User
@@ -96,4 +92,16 @@ Here's an illustration of Singularity containers for multiple students, each wit
 
 <b>Singularity Official Documentation<b> https://apptainer.org/user-docs/master/
 
+# Why Use Singularity Containers?
+
+- High Performance: Provide Near Native Performance
+- User Privilages: Allows non-root/sudo users to create, run, and manage software and package inside their container
+- Enterprise and Research Use: Serves both enterprise and research needs, bridging the gap between development, testing, and production environments
+- Easy Conversion: Enables easy conversion of popular Docker images
+- Container Mobility: Can be moved across different systems, allowing researchers to work on their projects without being tied to a specific machine
+- Support for MPI and GPUs: Supports Multi-Process Communication (MPI) and GPU acceleration, critical for parallel and GPU-intensive computing tasks
+                              - Machine Learning
+                              - AI
+                              - Deep Learning
+- Security Isolation: Preventing applications from affecting the host system and other containers, enhancing security
 
