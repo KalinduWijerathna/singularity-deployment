@@ -94,7 +94,8 @@ Here's an illustration of Singularity containers for multiple students, each wit
     ```$ singularity exec base.sif <your-command>```
 
 
-<b>Singularity Official Documentation</b> https://apptainer.org/user-docs/master/
+<b>Singularity Official Documentation</b> https://apptainer.org/user-docs/master/ \
+<b>More on Singularity creating custom def files</b> https://docs.sylabs.io/guides/latest/user-guide/definition_files.html
 
 # <h2>Why Use Singularity Containers?</h2>
 
