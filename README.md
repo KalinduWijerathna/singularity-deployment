@@ -1,4 +1,6 @@
-# How Singularity Container works on Kepler server?
+# <h1>Singularity Deployment Instructions</h1>
+
+# <h2>How Singularity Container works on Kepler server?</h2>
 
 Here's an illustration of Singularity containers for multiple students, each with their preferred OS, software, and packages, on Kepler:
 ```
@@ -52,14 +54,14 @@ Here's an illustration of Singularity containers for multiple students, each wit
         | +--------------------------+     |
         |                                  |
         +----------------------------------+
-                                               ```
+                                               
 
 ```
 - Each Student can build <b>only 1</b> singularity container in their user account in Kepler.
 - Each Student can install their <b>preferred OS(Ubuntu,CentOS...etc.), preferrd laguages(C++,Java,R,Python...etc.), prefered libraries, packages, and softwares</b> inside their container.
 
 
-# Singularity Quick-Start for New User
+# <h2>Singularity Quick-Start for New User</h2>
 
 1. Login to the kepler GPU server with your username and password.(The same credentials as for aiken or tesla).
 
@@ -90,9 +92,9 @@ Here's an illustration of Singularity containers for multiple students, each wit
     ```$ singularity exec base.sif <your-command>```
 
 
-<b>Singularity Official Documentation<b> https://apptainer.org/user-docs/master/
+<b>Singularity Official Documentation</b> https://apptainer.org/user-docs/master/
 
-# Why Use Singularity Containers?
+# <h2>Why Use Singularity Containers?</h2>
 
 - High Performance: Provide Near Native Performance
 - User Privilages: Allows non-root/sudo users to create, run, and manage software and package inside their container
