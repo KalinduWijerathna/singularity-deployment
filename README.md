@@ -1,6 +1,6 @@
 # How Singularity Container works on Kepler server?
 
-Here's an illustration of Singularity containers for multiple students, each with their preferred OS, software, and packages, on Kepler:\
+Here's an illustration of Singularity containers for multiple students, each with their preferred OS, software, and packages, on Kepler:
 ```
     +----------------------------------+
     |               Kepler             |
