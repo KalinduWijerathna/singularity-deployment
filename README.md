@@ -76,7 +76,7 @@ Here's an illustration of Singularity containers for multiple students, each wit
 
 4. Copy the base.def file from the cloned repo and paste it in your preferred(/home) directory in Kepler.
    - You can either just copy the content of the def file and paste it using
-     ```eyyxxx@kepler:~$ vim base.def```\
+     ```eyyxxx@kepler:~$ vim base.def```
    - Or you can use MobaXterm and copy paste the file base.def 
 
 5. Build a Sandbox version to test and install necessary packages/dependencies.\
