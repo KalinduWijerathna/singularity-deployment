@@ -1,7 +1,7 @@
 # How Singularity Container works on Kepler server?
 
 Here's an illustration of Singularity containers for multiple students, each with their preferred OS, software, and packages, on Kepler:\
-    +----------------------------------+
+''' +----------------------------------+
     |               Kepler             |
     |    High Performance GPU Server   |
     |          OS: Ubuntu Server       |
@@ -17,6 +17,41 @@ Here's an illustration of Singularity containers for multiple students, each wit
                |                   |
                |                   |
                |                   |
+        +----------------------------------+
+        |       Singularity Runtime        |
+        |                                  |
+        | +--------------------------+     |
+        | |                          |     |
+        | | Singularity Container    |     |
+        | | for eyy001               |     |
+        | | - Preferred OS (Ubuntu)  |     |
+        | | - Preferred languages    |     |
+        | | - Preferred packages     |     |
+        | | - Preferred software     |     |
+        | +--------------------------+     |
+        |                                  |
+        | +--------------------------+     |
+        | |                          |     |
+        | | Singularity Container    |     |
+        | | for eyy002               |     |
+        | | - OS: CentOS             |     |
+        | | - Languages: R           |     |
+        | | - GCC, Make              |     |
+        | | - Data Analysis Tools    |     |
+        | +--------------------------+     |
+        |                                  |
+        | +--------------------------+     |
+        | |                          |     |
+        | | Singularity Container    |     |
+        | | for eyy003               |     |
+        | | - OS: Fedora             |     |
+        | | - Languages: Java        |     |
+        | | - Apache Spark           |     |
+        | | - Hadoop                 |     |
+        | +--------------------------+     |
+        |                                  |
+        +----------------------------------+'''
+
 
 
 
