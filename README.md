@@ -1,15 +1,18 @@
 # How Singularity Container works on Kepler server?
 
+Here's an illustration of Singularity containers for multiple students, each with their preferred OS, software, and packages, on Kepler:
+'''
     +----------------------------------+
-    |        Host Machine (HPC)        |
-    |          Ubuntu Server           |
+    |               Kepler             |
+    |    High Performance GPU Server   |
+    |          OS:Ubuntu Server        |
     +----------------------------------+
                |                   |
                |                   |
 +--------------|-------------------|--------------+
 |              |                   |              |
-|    Student   |     Student       |    Student   |
-|    User A    |     User B        |    User C    |
+|   Student_1  |     Student_2     |   Student_3  |
+|    eyy001    |      eyy002       |    eyy003    |
 |              |                   |              |
 +--------------|-------------------|--------------+
                |                   |
@@ -21,35 +24,37 @@
     |                                  |
     | +--------------------------+     |
     | |                          |     |
-    | | Singularity Container   |     |
-    | | for User A (Ubuntu)     |     |
-    | |                         |     |
-    | | - Python                |     |
-    | | - TensorFlow            |     |
-    | | - SciPy, NumPy          |     |
+    | | Singularity Container    |     |
+    | | for eyy001               |     |
+    | | - prefferd OS (Ubunutu)  |     |
+    | | - prefferd languages(..) |     |
+    | | - prefferd packages(..)  |     |
+    | | - preffered software     |     |
     | +--------------------------+     |
     |                                  |
     | +--------------------------+     |
     | |                          |     |
-    | | Singularity Container   |     |
-    | | for User B (CentOS)     |     |
-    | |                          |     |
-    | | - R                     |     |
-    | | - GCC, Make             |     |
-    | | - Data Analysis Tools   |     |
+    | | Singularity Container    |     |
+    | | for eyy002               |     |
+    | | eg: {                    |     |
+    | | - OS: CentOS             |     |
+    | | - languages:R            |     |
+    | | - GCC, Make              |     |
+    | | - Data Analysis Tools  } |     |
     | +--------------------------+     |
     |                                  |
     | +--------------------------+     |
     | |                          |     |
-    | | Singularity Container   |     |
-    | | for User C (Fedora)     |     |
-    | |                          |     |
-    | | - Java                  |     |
-    | | - Apache Spark          |     |
-    | | - Hadoop                |     |
+    | | Singularity Container    |     |
+    | | for eyy003               |     |
+    | | eg: {                    |     |
+    | | - OS: Fedora             |     |
+    | | - languages: Java        |     |
+    | | - Apache Spark           |     |
+    | | - Hadoop                 |     |
     | +--------------------------+     |
     |                                  |
-    +----------------------------------+
+    +----------------------------------+    '''
 
 
 
