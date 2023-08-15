@@ -17,8 +17,8 @@ Here's an illustration of Singularity containers for multiple students, each wit
 +--------------|-------------------|--------------+
                |                   |
                |                   |
-               v                   v
-
+               |                   |
+               V                   V
     +----------------------------------+
     |       Singularity Runtime        |
     |                                  |
