@@ -1,0 +1,17 @@
+# Simple custom container. For more info visit https://docs.sylabs.io/guides/latest/user-guide/definition_files.html
+
+Bootstrap: library
+From: ubuntu:22.04
+
+%post
+    echo "Build Successful"
+    # Install base packages
+    apt-get update && apt-get install -y python3 curl
+    # Install pip
+    curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python3 get-pip.py
+    # Install pytorch for CPU
+    pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cpu
+    # ... Install other packages after this line
+
+    # ...
+
