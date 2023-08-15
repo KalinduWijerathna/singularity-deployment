@@ -63,7 +63,7 @@ Here's an illustration of Singularity containers for multiple students, each wit
 
 1. Login to the kepler GPU server with your username and password.(The same credentials as for aiken or tesla).
 
-    ```$ ssh eyyxxx@kepler.ce.pdn.ac.lk ```.\
+    ```$ ssh eyyxxx@kepler.ce.pdn.ac.lk ```\
    server public documentation: https://faq.ce.pdn.ac.lk/network-n-servers/kepler/
 
 3. A sample singularity container definition file(Already comes with python3, pip3 and pytorch) is available at /srv/singularity/base.def  
@@ -100,8 +100,8 @@ Here's an illustration of Singularity containers for multiple students, each wit
 - Easy Conversion: Enables easy conversion of popular Docker images
 - Container Mobility: Can be moved across different systems, allowing researchers to work on their projects without being tied to a specific machine
 - Support for MPI and GPUs: Supports Multi-Process Communication (MPI) and GPU acceleration, critical for parallel and GPU-intensive computing tasks
-                              * Machine Learning
-                              * AI
-                              * Deep Learning
+  - Machine Learning
+  - AI
+  - Deep Learning
 - Security Isolation: Preventing applications from affecting the host system and other containers, enhancing security
 
