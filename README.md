@@ -72,7 +72,7 @@ Here's an illustration of Singularity containers for multiple students, each wit
 
 2. A sample singularity container definition file(Already comes with python3, pip3 and pytorch) is available in this repository as /base.def  
 
-3. Clone this repo to your local computer.\
+3. Clone this repo to your local computer.
 
 4. Copy the base.def file from the cloned repo and paste it in your preferred(/home) directory in Kepler.
    - You can either just copy the content of the def file and paste it using
@@ -86,7 +86,8 @@ Here's an illustration of Singularity containers for multiple students, each wit
 6. To enter the singularity container\
     ```eyyxxx@kepler:~/path/to/your/dir$ singularity shell --writable --fakeroot base```
 
-7. Check whether new packages can be installed with apt package manager to the new container.For example:\
+7. Check whether new packages can be installed with apt package manager to the new container.
+   For example:\
     ```Singularity> apt-get install neofetch```
 
 8. Add the commands from step 6 to the def file under the %post blob so that the final build will have the packages you tested above.
