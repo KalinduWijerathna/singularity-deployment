@@ -70,28 +70,33 @@ Here's an illustration of Singularity containers for multiple students, each wit
     ```$ ssh eyyxxx@kepler.ce.pdn.ac.lk ```\
    server public documentation: https://faq.ce.pdn.ac.lk/network-n-servers/kepler/
 
-3. A sample singularity container definition file(Already comes with python3, pip3 and pytorch) is available at /srv/singularity/base.def  
+2. A sample singularity container definition file(Already comes with python3, pip3 and pytorch) is available in this repository as /base.def  
 
-4. Copy it to your preferred (home) directory.\
-    ```$ cp /srv/singularity/base.def path/to/your/dir/base.def```
+3. Clone this repo to your local computer.\
+
+4. Copy the base.def file from the cloned repo and paste it in your preferred(/home) directory in Kepler.
+   - You can either just copy the content of the def file and paste it using
+     ```eyyxxx@kepler:~$ vim base.def```\
+   - Or you can use MobaXterm and copy paste the file base.def 
 
 5. Build a Sandbox version to test and install necessary packages/dependencies.\
-    ```$ cd path/to/your/dir```\
-    ```$ singularity build --sandbox --fakeroot base base.def ```
+    ```eyyxxx@kepler:~$ cd path/to/your/dir```\
+    ```eyyxxx@kepler:~/path/to/your/dir$ singularity build --sandbox --fakeroot base base.def ```
 
 6. To enter the singularity container\
-    ```$ singularity shell --writable --fakeroot base```
+    ```eyyxxx@kepler:~/path/to/your/dir$ singularity shell --writable --fakeroot base```
 
 7. Check whether new packages can be installed with apt package manager to the new container.For example:\
-    ```$ apt-get install neofetch```
+    ```Singularity> apt-get install neofetch```
 
 8. Add the commands from step 6 to the def file under the %post blob so that the final build will have the packages you tested above.
 
 9. Build the container\
-    ```$ singularity build --fakeroot base.sif base.def```
+    ```eyyxxx@kepler:~/path/to/your/dir$ singularity build --fakeroot base.sif base.def```
 
 10. Run commands using the container\
-    ```$ singularity exec base.sif <your-command>```
+    ```eyyxxx@kepler:~/path/to/your/dir$  singularity exec base.sif <your-command>```
+
 
 
 <b>Singularity Official Documentation</b> https://apptainer.org/user-docs/master/ \
