@@ -72,7 +72,7 @@ Here's an illustration of Singularity containers for multiple students, each wit
 
 2. A sample singularity container definition file(Already comes with python3, pip3 and pytorch) is available in this repository as /base.def  
 
-3. Download the sample def file.\ 
+3. Download the sample def file.<br />
  ```eyyxxx@kepler:~/path/to/your/dir$ wget https://raw.githubusercontent.com/cepdnaclk/singularity-deployment/main/base.def```
 
 4. Build a Sandbox version to test and install necessary packages/dependencies.\
