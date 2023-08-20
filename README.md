@@ -64,6 +64,7 @@ Here's an illustration of Singularity containers for multiple students, each wit
 
 
 # <h2>Singularity Quick-Start for New User</h2>
+The follwoing instructions are focused on installing in Kepler.The process is exactly the same for Aiken and Turing aswell.
 
 1. Login to the kepler GPU server with your username and password.(The same credentials as for aiken or tesla).
 
