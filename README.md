@@ -98,7 +98,8 @@ The follwoing instructions are focused on installing in Kepler.The process is ex
 
 
 <b>Singularity Official Documentation</b> https://apptainer.org/user-docs/master/ \
-<b>More on creating custom def files</b> https://docs.sylabs.io/guides/latest/user-guide/definition_files.html
+<b>More on creating custom def files</b> https://docs.sylabs.io/guides/latest/user-guide/definition_files.html \
+<b>Further reading:Bind-mount of singularity.conf</b> https://apptainer.org/docs/admin/main/configfiles.html#bind-mount-management (apptainer is very similar to singularity)
 
 # <h2>Why Use Singularity Containers?</h2>
 
