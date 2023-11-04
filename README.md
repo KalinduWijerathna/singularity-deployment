@@ -2,7 +2,7 @@
 
 # <h2>How Singularity Container works on Kepler/Turing/Aiken server?</h2>
 
-For eg: Let's Consider Kepler
+For eg: Let's Consider Kepler\
 Here's an illustration of Singularity containers for multiple students, each with their preferred OS, software, and packages, on Kepler:
 ```
     +----------------------------------+
