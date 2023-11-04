@@ -87,7 +87,7 @@ The follwoing instructions are focused on installing in Kepler.The process is ex
 6. Check whether new packages can be installed with apt package manager to the new container.
    For example:\
     ```Singularity> apt-get install neofetch```\
-    -<b>Always make sure to check the current version of CUDA when neccessary.(command: nvidia-smi)</b>\
+    -<b>Always make sure to check the current version of CUDA when neccessary.(command: nvidia-smi)</b>
 
 7. Add the commands from step 6 to the def file under the %post blob so that the final build will have the packages you tested above.
 
@@ -101,7 +101,8 @@ The follwoing instructions are focused on installing in Kepler.The process is ex
     i. If Running Without GPUs (General Command)\
     ```eyyxxx@kepler:~/path/to/your/dir$  singularity exec base.sif <your-command>```\
         eg: Running Python CLI\
-            ```eyyxxx@kepler:~/path/to/your/dir$  singularity exec base.sif python3
+            ```
+                eyyxxx@kepler:~/path/to/your/dir$  singularity exec base.sif python3
                 Python 3.10.12 (main, Month dd yyyy, hh:mm:ss) [GCC 11.4.0] on linux
                 Type "help", "copyright", "credits" or "license" for more information.
                 >>> print("Hello, World")
@@ -111,7 +112,8 @@ The follwoing instructions are focused on installing in Kepler.The process is ex
     ii. If Running With GPUs\
     ```eyyxxx@kepler:~/path/to/your/dir$  singularity exec --contain --nv base.sif  <your-command>```\
          eg: Running Python CLI with pytorch\
-            ```eyyxxx@kepler:~/path/to/your/dir$  singularity exec base.sif python3
+            ```
+                eyyxxx@kepler:~/path/to/your/dir$  singularity exec base.sif python3
                 Python 3.10.12 (main, Month dd yyyy, hh:mm:ss) [GCC 11.4.0] on linux
                 Type "help", "copyright", "credits" or "license" for more information.
                 >>> import torch
