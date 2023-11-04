@@ -1,7 +1,8 @@
 # <h1>Singularity Deployment Instructions</h1>
 
-# <h2>How Singularity Container works on Kepler server?</h2>
+# <h2>How Singularity Container works on Kepler/Turing/Aiken server?</h2>
 
+For eg: Let's Consider Kepler
 Here's an illustration of Singularity containers for multiple students, each with their preferred OS, software, and packages, on Kepler:
 ```
     +----------------------------------+
@@ -64,7 +65,7 @@ Here's an illustration of Singularity containers for multiple students, each wit
 
 
 # <h2>Singularity Quick-Start for New User</h2>
-The follwoing instructions are focused on installing in Kepler.The process is exactly the same for Aiken and Turing aswell.
+The follwoing instructions are focused on installing in Kepler.The process is exactly the same for Aiken and Turing as well.
 
 1. Login to the kepler GPU server with your username and password.(The same credentials as for aiken or tesla).
 
@@ -85,21 +86,43 @@ The follwoing instructions are focused on installing in Kepler.The process is ex
 
 6. Check whether new packages can be installed with apt package manager to the new container.
    For example:\
+    -<b>Always make sure to check the current version of CUDA when neccessary.(command: nvidia-smi)</b>
     ```Singularity> apt-get install neofetch```
 
 7. Add the commands from step 6 to the def file under the %post blob so that the final build will have the packages you tested above.
 
-8. Build the container\
+8. Assign the Server's GPUs to your Container\
+    ```eyyxxx@kepler:~/path/to/your/dir$export NVIDIA_VISIBLE_DEVICES=1,2```
+
+9. Build the container\
     ```eyyxxx@kepler:~/path/to/your/dir$ singularity build --fakeroot base.sif base.def```
-
-9. Run commands using the container\
+   
+10. Run commands using the container\
+    i. If Running Without GPUs (General Command)\
     ```eyyxxx@kepler:~/path/to/your/dir$  singularity exec base.sif <your-command>```
+        eg: Running Python CLI\
+            ```eyyxxx@kepler:~/path/to/your/dir$  singularity exec base.sif python3
+                Python 3.10.12 (main, Month dd yyyy, hh:mm:ss) [GCC 11.4.0] on linux
+                Type "help", "copyright", "credits" or "license" for more information.
+                >>> print("Hello, World")
+                Hello, World
+            ```
 
+    ii. If Running With GPUs\
+    ```eyyxxx@kepler:~/path/to/your/dir$  singularity exec --contain --nv base.sif  <your-command>```
+         eg: Running Python CLI with pytorch\
+            ```eyyxxx@kepler:~/path/to/your/dir$  singularity exec base.sif python3
+                Python 3.10.12 (main, Month dd yyyy, hh:mm:ss) [GCC 11.4.0] on linux
+                Type "help", "copyright", "credits" or "license" for more information.
+                >>> import torch
+                >>> torch.cuda.device_count()
+                1
+            ```    
 
 
 <b>Singularity Official Documentation</b> https://apptainer.org/user-docs/master/ \
 <b>More on creating custom def files</b> https://docs.sylabs.io/guides/latest/user-guide/definition_files.html \
-<b>Further reading:Bind-mount of singularity.conf</b> https://apptainer.org/docs/admin/main/configfiles.html#bind-mount-management 
+<b>More on Bind-mount of singularity.conf(for server admin's reference)</b> https://apptainer.org/docs/admin/main/configfiles.html#bind-mount-management 
 
 # <h2>Why Use Singularity Containers?</h2>
 
