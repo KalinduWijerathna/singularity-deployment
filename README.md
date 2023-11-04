@@ -103,22 +103,19 @@ The follwoing instructions are focused on installing in Kepler.The process is ex
         eg: Running Python CLI\
             ```eyyxxx@kepler:~/path/to/your/dir$  singularity exec base.sif python3```\
             ```Python 3.10.12 (main, Month dd yyyy, hh:mm:ss) [GCC 11.4.0] on linux```\
-            ```python Type "help", "copyright", "credits" or "license" for more information.
-                >>> print("Hello, World")
-                Hello, World
-            ```
+            ```Type "help", "copyright", "credits" or "license" for more information.```\
+            ```>>> print("Hello, World")```\
+            ```Hello, World```\
 
     ii. If Running With GPUs\
     ```eyyxxx@kepler:~/path/to/your/dir$  singularity exec --contain --nv base.sif  <your-command>```\
          eg: Running Python CLI with pytorch\
-            ````
-                eyyxxx@kepler:~/path/to/your/dir$  singularity exec base.sif python3
-                Python 3.10.12 (main, Month dd yyyy, hh:mm:ss) [GCC 11.4.0] on linux
-                Type "help", "copyright", "credits" or "license" for more information.
-                >>> import torch
-                >>> torch.cuda.device_count()
-                1
-            ````    
+            ```eyyxxx@kepler:~/path/to/your/dir$  singularity exec base.sif python3```\
+            ```Python 3.10.12 (main, Month dd yyyy, hh:mm:ss) [GCC 11.4.0] on linux```\
+            ```Type "help", "copyright", "credits" or "license" for more information.```\
+            ```>>> import torch```\
+            ```>>> torch.cuda.device_count()```\
+            ```1```\
 
 
 <b>Singularity Official Documentation</b> https://apptainer.org/user-docs/master/ \
