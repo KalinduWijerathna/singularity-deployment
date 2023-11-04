@@ -86,8 +86,8 @@ The follwoing instructions are focused on installing in Kepler.The process is ex
 
 6. Check whether new packages can be installed with apt package manager to the new container.
    For example:\
-    -<b>Always make sure to check the current version of CUDA when neccessary.(command: nvidia-smi)</b>
-    ```Singularity> apt-get install neofetch```
+    ```Singularity> apt-get install neofetch```\
+    -<b>Always make sure to check the current version of CUDA when neccessary.(command: nvidia-smi)</b>\
 
 7. Add the commands from step 6 to the def file under the %post blob so that the final build will have the packages you tested above.
 
