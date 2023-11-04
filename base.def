@@ -9,8 +9,16 @@ From: ubuntu:22.04
     apt-get update && apt-get install -y python3 curl
     # Install pip
     curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py && python3 get-pip.py
-    # Install pytorch for GPU : cuda version 12.1
-    pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+    
+    ############################################################################################
+    # Install pytorch for GPU => uncomment accordingly
+
+    # For Turing: current CUDA version 12.1
+    # pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+
+    # For Kepler: current CUDA version 11.1
+    # pip install torch==1.10.1+cu111 torchvision==0.11.2+cu111 torchaudio==0.10.1 -f https://download.pytorch.org/whl/cu111/torch_stable.html
+    #############################################################################################
     # ... Install other packages after this line
 
     # ...
